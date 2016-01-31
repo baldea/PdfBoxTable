@@ -22,11 +22,9 @@ import org.apache.pdfbox.pdmodel.PDPage;
 public class Main {
 
     public static void main(String[] args) throws IOException, COSVisitorException {
-        System.out.println("Hello World!");
-
         PageablePdf pdf = new PageablePdf(PDPage.PAGE_SIZE_A4.getWidth(), PDPage.PAGE_SIZE_A4.getHeight());
 
-        pdf.setFooterLines(Arrays.asList("This document is an example of now to create PDF with tables."));
+        pdf.setFooterLines(Arrays.asList("This document is an example of how to create PDF with tables."));
         pdf.setContentLeftPadding(20f);
         pdf.setContentTopPadding(10f);
         pdf.setContentBottomPadding(40f); // This include the footer too
